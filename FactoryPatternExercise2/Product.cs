@@ -13,14 +13,14 @@ namespace FactoryPatternExercise2
         }
 
         public string Name { get; set; }
-        public int Price { get; set; }
+        public double Price { get; set; }
 
         public static List<Product> ProductList = new List<Product>() 
         { 
-            new Product() { Name = "Legos", Price = 100 }, 
-            new Product() { Name = "Playdough", Price = 25 },
-            new Product() { Name = "PS5", Price = 500 },
-            new Product() { Name = "iPhone", Price = 600 },
+            new Product() { Name = "Legos", Price = 99.99 }, 
+            new Product() { Name = "Playdough", Price = 24.99 },
+            new Product() { Name = "PS5", Price = 499.99 },
+            new Product() { Name = "iPhone", Price = 599.99 },
         };
 
     }

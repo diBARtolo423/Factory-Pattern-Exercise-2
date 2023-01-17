@@ -8,8 +8,17 @@
             var userData = Console.ReadLine();
 
             IDataAccess data = DataAccessFactory.GetDataAccessType(userData);
-            data.LoadData();
+            List<Product> ProductList = data.LoadData();
             data.SaveData();
+
+            Console.WriteLine("Here are your items:");
+            foreach (var item in ProductList)
+            {
+                Console.WriteLine($"Product Name: {item.Name}");
+                Console.WriteLine($"Product Price: {item.Price}");
+            }
+
+            
         }
     }
 }
